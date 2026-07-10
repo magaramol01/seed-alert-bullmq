@@ -1,0 +1,24 @@
+# seed-alert cron schedule
+# Install with:   crontab -e     (then paste one of the lines below)
+# Verify with:    crontab -l
+# Logs go to:     seed-alert/seed-alert.log
+#
+# NOTE: cron's finest granularity is 1 minute. For sub-minute frequency,
+#       use the in-process loop instead:  python3 seed.py --interval 15
+#
+# ┌───────────── minute (0-59)
+# │ ┌───────────── hour (0-23)
+# │ │ ┌───────────── day of month (1-31)
+# │ │ │ ┌───────────── month (1-12)
+# │ │ │ │ ┌───────────── day of week (0-6, Sun=0)
+# │ │ │ │ │
+# * * * * *  command
+
+# Every minute:
+* * * * * /home/developer/Desktop/DAY\ TO\ DAY/defect-management/seed-alert/run-seed.sh
+
+# Every 5 minutes:
+# */5 * * * * /home/developer/Desktop/DAY\ TO\ DAY/defect-management/seed-alert/run-seed.sh
+
+# Every hour on the hour:
+# 0 * * * * /home/developer/Desktop/DAY\ TO\ DAY/defect-management/seed-alert/run-seed.sh
