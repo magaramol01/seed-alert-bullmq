@@ -1,4 +1,2 @@
 causeDescription,timestamp,vesselMappingName,vesselId,tenant
-Main Engine High Temperature,2026-07-10T09:15:00,MV Orion Star,101,gesco
-Fuel Oil Low Pressure,2026-07-10T09:20:00,MV Orion Star,101,gesco
-Bilge Water High Level,2026-07-10T09:25:00,MV Gesco Voyager,102,gesco
+Air system component degradation or leakage affecting operation,2026-07-10T09:15:00,jag-aalok,16,gesco
